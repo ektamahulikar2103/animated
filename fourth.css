@@ -1,0 +1,98 @@
+.sky{
+    background-image: url(./sky.jpg);
+    height:100vh;
+    width:100%;
+    background-size: 100% 100%;
+}
+*{
+    margin:0;
+}
+.road{
+    height:30vh;
+    width:500%;
+    background-image: url(./road.jpg);
+    position:absolute;
+    bottom: 0px;
+    animation: road 10s linear infinite;
+}
+@keyframes road{
+    100%
+    {
+        transform: translateX(-3000px);
+    }
+}
+.city{
+    height: 30vh;
+    width: 500%;
+    background-image: url(./city.png);
+    position: absolute;
+    bottom: 30vh;
+    animation: city 7s linear infinite;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-3000px);
+    }
+}
+.cycle{
+    position: absolute;
+    bottom:50px;
+    margin-left:400px;
+    
+}
+.cycleimg{
+    width:300px;
+    animation:cycle 2s linear infinite;
+}
+@keyframes cycle{
+    100%{
+        transform: translate(400px);
+    }
+}
+
+
+.car{
+    position: absolute;
+    bottom: 50px;
+}
+.carimg{
+    width: 550px;
+}
+.wheel{
+    position: absolute;
+    bottom: 55px;
+
+}
+.front{
+    width: 100px;
+    position: absolute;
+    left: 385px;
+    animation: tyre 2s linear infinite;
+}
+.back{
+    width: 100px;
+    margin-left: 45px;
+    animation: tyre 2s linear infinite;
+}
+@keyframes tyre{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.bike{
+    position: absolute;
+    bottom: 50px;
+    margin-left: 900px;
+}
+.bikeimg{
+    width: 400px;
+    animation: bike 1s linear infinite;
+}
+@keyframes bike{
+    100%{
+        transform: translateX(300px);
+    }
+}
